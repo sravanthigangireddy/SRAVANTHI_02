@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Selectors Example</title>
+
+<style>
+
+/* -------- Simple Selectors -------- */
+
+/* element selector */
+p {
+  color: blue;
+}
+
+/* id selector */
+#heading {
+  color: red;
+}
+
+/* class selector */
+.box {
+  background-color: lightgray;
+}
+
+/* group selector */
+h2, h3 {
+  color: green;
+}
+
+/* universal selector */
+* {
+  font-family: Arial;
+}
+
+
+/* -------- Combinator Selectors -------- */
+
+/* descendant selector */
+div p {
+  background-color: yellow;
+}
+
+/* child selector */
+div > h4 {
+  color: purple;
+}
+
+/* adjacent sibling */
+h5 + p {
+  color: orange;
+}
+
+/* general sibling */
+h6 ~ p {
+  background-color: pink;
+}
+
+
+/* -------- Pseudo-class Selector -------- */
+a:hover {
+  color: red;
+}
+
+
+/* -------- Pseudo-element Selector -------- */
+p::first-letter {
+  font-size: 20px;
+  color: brown;
+}
+
+
+/* -------- Attribute Selector -------- */
+input[type="text"] {
+  background-color: lightblue;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1 id="heading">ID Selector</h1>
+
+<h2>Group Selector</h2>
+<h3>Group Selector</h3>
+
+<p>Element selector example</p>
+
+<div class="box">
+    <p>Descendant selector</p>
+    <h4>Child selector</h4>
+</div>
+
+<h5>Adjacent sibling</h5>
+<p>This paragraph uses adjacent sibling</p>
+
+<h6>General sibling</h6>
+<p>General sibling example</p>
+<p>Another sibling example</p>
+
+<a href="#">Hover me</a>
+<br><br>
+
+<input type="text" placeholder="Attribute selector">
+
+</body>
+</html>
